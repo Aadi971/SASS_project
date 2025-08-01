@@ -1,0 +1,9 @@
+header{ background: #213532; color: #fff; padding: 13px 0;}
+nav{ justify-content: right;}
+nav li{ margin-left: 22px;}
+nav a{ color: inherit; display: block; width: 146px; line-height: 39px; border: 3px solid; text-align: center; }
+nav a.active{ background: var(--lg); border-color: var(--lg); }
+nav a.last{ color: var(--gold); }
+header label, header input{ display: none;}
+
+h2{ font-size: 40px; line-height: 1.25; color: #436d67;}
