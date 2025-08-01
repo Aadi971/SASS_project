@@ -1,0 +1,337 @@
+*, ::before, ::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  font: 16px var(--ff);
+}
+
+input, select {
+  font-family: var(--ff);
+}
+
+label {
+  display: inline-block;
+}
+
+iframe {
+  border: none;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -1rem;
+}
+
+[class^=col-] {
+  flex: 1 0 auto;
+  padding: 0 1rem;
+}
+
+.col-1 {
+  flex-basis: 8.33%;
+  max-width: 8.33%;
+}
+
+.col-2 {
+  flex-basis: 16.66%;
+  max-width: 16.66%;
+}
+
+.col-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+}
+
+.col-5 {
+  flex-basis: 41.66%;
+  max-width: 41.66%;
+}
+
+.col-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex-basis: 58.33%;
+  max-width: 58.33%;
+}
+
+.col-8 {
+  flex-basis: 66.66%;
+  max-width: 66.66%;
+}
+
+.col-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex-basis: 83.33%;
+  max-width: 83.33%;
+}
+
+.col-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-bet {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+header {
+  background: #213532;
+  color: #fff;
+  padding: 13px 0;
+}
+
+nav {
+  justify-content: right;
+}
+
+nav li {
+  margin-left: 22px;
+}
+
+nav a {
+  color: inherit;
+  display: block;
+  width: 146px;
+  line-height: 39px;
+  border: 3px solid;
+  text-align: center;
+}
+
+nav a.active {
+  /* background: var(--lg);
+  border-color: var(--lg); */
+  background: #10baae;
+  border-color: #10baae;
+}
+
+nav a.last {
+  color: var(--gold);
+}
+
+header label, header input {
+  display: none;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1.25;
+  color: #436d67;
+}
+
+.wrap-6 {
+  padding: 4rem 0;
+  background: #f0f0f2;
+  text-align: center;
+}
+
+.wrap-6 p {
+  margin: 37px 0 42px;
+}
+
+.wrap-7 {
+  background: #213532;
+  color: #c7c7c7;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.wrap-7 li {
+  margin: 1rem;
+}
+
+.wrap-7 a {
+  color: inherit;
+  font-size: 24px;
+}
+
+.nav a {
+  font-size: 13px;
+}
+
+.nav li {
+  margin: 0;
+}
+
+.nav a {
+  padding: 0 1rem;
+}
+
+.nav li:not(:first-child) {
+  border-left: 1px solid;
+}
+
+.wrap-8 {
+  background: #162724;
+  color: #c7cccc;
+  text-align: center;
+  padding: 25px 0;
+}
+
+@media screen and (max-width: 1220px) {
+  html {
+    font-size: 14px;
+  }
+  .banner {
+    padding: 6rem 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  .col-t-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .col-t-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+  .col-t-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .col-t-8 {
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+  }
+  .col-t-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .col-t-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .banner {
+    padding: 3rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 13px;
+  }
+  .col-m-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  header nav.flex {
+    display: none;
+  }
+  .banner p {
+    font-size: 45px;
+  }
+  .wrap-3 {
+    line-height: 8rem;
+    font-size: 24px;
+  }
+  header input[type=checkbox] {
+    display: none;
+  }
+  header label {
+    float: right;
+    font-size: 3rem;
+    color: #10baae;
+  }
+  header input:checked ~ nav {
+    display: block;
+    /* background: #000; */
+    background: #10baae;
+    border-color: #10baae;
+  }
+  header nav {
+    background: var(--green);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+  }
+  header ul.flex {
+    display: block;
+    clear: both;
+  }
+  header nav a {
+    width: 100%;
+  }
+  header nav li {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  header label, header input {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 460px) {
+  .col-p-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+  .col-p-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .col-p-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .banner {
+    padding: 2rem 0;
+  }
+  .wrap-3 {
+    line-height: 4rem;
+  }
+  iframe {
+    height: auto;
+  }
+  .nav a {
+    padding: 0 5px;
+  }
+}
+
+/*# sourceMappingURL=shop.css.map */
