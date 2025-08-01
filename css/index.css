@@ -380,6 +380,8 @@ h3 {
   }
   header input:checked ~ nav {
     display: block;
+    background: #10baae;
+    border-color: #10baae;
   }
   header nav {
     background: var(--green);
